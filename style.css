@@ -5,21 +5,22 @@
   list-style-type: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  background-color: rgb(17, 1, 23);
-}
-
 .fonts {
   font-family: "Knewave", system-ui;
   font-weight: 400;
   font-style: normal;
-
+  
+}
+body {
+  background-color: rgb(17, 1, 23);
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 .heading {
   text-align: center;
   color: whitesmoke;
@@ -61,5 +62,54 @@ body {
   letter-spacing: 5px;
   color: whitesmoke;
   cursor: pointer;
+}
+
+.view {
+  display: none;  
+ 
+}
+
+.task-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 10px 20px 0px;
+  padding: 10px;
+}
+
+.task-manager h2, .task-manager p{
+    color: whitesmoke;
+    /* background-color: aqua; */
+  }
+  
+.task-manager h2 {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.style-button-add, .style-button-del, .style-button-update{
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.style-button-add {
+  background-color: rgb(14, 103, 14);
+}
+
+.style-button-del {
+  background-color: rgb(88, 9, 9);
+}
+
+.style-button-update {
+  background-color: rgb(14, 42, 125);
 }
 

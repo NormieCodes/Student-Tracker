@@ -10,17 +10,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="heading fonts">Student Tracker</h1>
+  
+  <main class="home view">
+  <!-- Heading -->
+  <h1 class="heading fonts view">Student Tracker</h1>
+     <!-- Navbar layout -->
+    <nav class="navbar fonts view">
+      <ul class="nav-list fonts">
+        <li class="nav-items fonts"><a href="#" data-view="tasks">Task Manager</a></li>
 
-  <nav class="navbar fonts">
-    <ul class="nav-list fonts">
-      <li class="nav-items fonts"><a href="task-manager">Task Manager</a></li>
+        <li class="nav-items fonts"><a href="#" data-view="Pomodoro">Pomodoro</a></li>
 
-      <li class="nav-items fonts"><a href="pomodoro">Pomodoro</a></li>
+        <li class="nav-items fonts"><a href="#" data-view="resource-tracker">Resource Tracker</a></li>
+      </ul>
+    </nav>
+   </main>
+  
 
-      <li class="nav-items fonts"><a href="resource-tracker">Resource Tracker</a></li>
-    </ul>
-</nav>
+  <!-- Task Manager -->
+   
+  <section class="task-manager">
+    <h2 class="fonts">Task Manager</h2>
+    <p class="fonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate obcaecati quidem voluptatum tenetur maiores adipisci!</p>
+    <div class="buttons">
+      <button class="style-button-add">Add a Task</button>
+      <button class="style-button-del">Delete a Task</button>
+      <button class="style-button-update">Update a Task</button>
+    </div>
+  </section>
+
+
   <script src="app.js"></script>
 </body>
 </html>

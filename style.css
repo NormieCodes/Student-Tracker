@@ -66,7 +66,7 @@ body {
 
 
 .task-manager {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 25px;
   margin: 10px;

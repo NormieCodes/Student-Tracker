@@ -64,16 +64,12 @@ body {
   cursor: pointer;
 }
 
-.view {
-  display: none;  
- 
-}
 
 .task-manager {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 25px;
-  margin: 10px 20px 0px;
+  margin: 10px;
   padding: 10px;
 }
 
@@ -113,3 +109,6 @@ body {
   background-color: rgb(14, 42, 125);
 }
 
+.hidden {
+  display: none;
+}

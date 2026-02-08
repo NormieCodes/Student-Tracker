@@ -56,7 +56,7 @@ body {
   width: 285px;
   border: 2px solid rgb(255, 0, 43);
   border-radius: 50px;
-  box-shadow: inset 0 0 20px rgb(225, 120, 120), 0 0 25px rgba(240, 88, 88, 0.8);
+  box-shadow: inset 0 0 20px rgb(211, 10, 10), 0 0 25px rgba(240, 88, 88, 0.8);
   font-size: 25px;
   letter-spacing: 5px;
   color: white;

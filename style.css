@@ -1,112 +1,54 @@
 * {
-  padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.fonts {
-  font-family: "Knewave", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  
-}
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-}
-.heading {
-  text-align: center;
-  color: whitesmoke;
-  margin: 20px 0;
-  font-size: 45px;
-  font-weight: bold;
-  filter: drop-shadow(0 0 15px rgba(250, 249, 251, 0.8));
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.wrapper {
   width: 100%;
-  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.nav-list {
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  width: inherit;
-  padding: 20px;
+  height: 50vh;
+  width: 70vw;
+  border: 2px solid white;
+  border-radius: 25px ;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  margin-bottom: 45px;
   text-align: center;
-  /* background-color: red; */
 }
 
-.nav-items a {
-  display: inline-block;
-  padding: 30px 50px;
-  width: 285px;
-  border: 2px solid rgb(255, 0, 43);
-  border-radius: 50px;
-  box-shadow: inset 0 0 20px rgb(211, 10, 10), 0 0 25px rgba(240, 88, 88, 0.8);
-  font-size: 25px;
-  letter-spacing: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-
-.task-manager {
+ul {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.task-manager h2, .task-manager p{
-    color: whitesmoke;
-    /* background-color: aqua; */
-  }
-  
-.task-manager h2 {
-  text-align: center;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 15px;
 }
 
-.style-button-add, .style-button-del, .style-button-update{
-  padding: 10px 15px;
-  border: 2px solid black;
-  border-radius: 25px;
+li {
+  text-align: center;
+}
+
+.list-css { 
+  font-size: 30px;
+  text-decoration: none;
   color: white;
-  font-size: 14px;
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8);
-}
-.style-button-add {
-  background-color: rgb(14, 103, 14);
 }
 
-.style-button-del {
-  background-color: rgb(88, 9, 9);
-}
-
-.style-button-update {
-  background-color: rgb(14, 42, 125);
-}
 
 .hidden {
   display: none;

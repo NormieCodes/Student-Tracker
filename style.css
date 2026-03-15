@@ -3,19 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+p {
+  color: white;
+}
 
 body {
   background-color: black;
+  font-family: sans-serif;
+
 }
 
-.wrapper {
+.app {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
-.main-content {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,30 +33,87 @@ body {
   border-radius: 25px ;
 }
 
-h1 {
+.app-title {
   color: whitesmoke;
   font-size: 2.5rem;
   margin-bottom: 45px;
   text-align: center;
 }
 
-ul {
+.menu ul {
   display: flex;
   flex-direction: column;
+  list-style: none;
   gap: 15px;
 }
 
-li {
+.menu li {
   text-align: center;
 }
 
-.list-css { 
+.menu-item { 
   font-size: 30px;
   text-decoration: none;
   color: white;
 }
-
-
 .hidden {
   display: none;
 }
+
+.page {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+.content {
+  display: flex;
+  height: 100vh;
+  width: 85vw;
+  margin-top: 25px;
+  align-items: flex-start;
+}
+.page.active {
+  display: block;
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.section-title {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-heading {
+  color: white;
+  font-size: 30px;
+}
+
+.home, .add, .delete {
+  background-color: cyan;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add {
+  background-color: greenyellow;
+}
+.delete {
+  background-color: darkred;
+}
+
+.style-para {
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+}
+

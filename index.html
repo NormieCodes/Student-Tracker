@@ -7,18 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrapper">
-    <h1>Student Tracker</h1>
-    <div id="main" class="main-content">
+  <main class="app">
+    <h1 class="app-title">Student Tracker</h1>
+    <nav class="menu">
       <ul>
-        <li><a class="list-js list-css" data-task href="#">Task Manager</a></li>
-        <li><a class="list-js list-css" data-task href="#">Pomodoro</a></li>
-        <li><a class="list-js list-css" data-task href="#">Resource Fetcher</a></li>
+        <li><a class="menu-item" data-section="task" href="#task">Task Manager</a></li>
+        <li><a class="menu-item" data-section="pomo" href="#pomo">Pomodoro</a></li>
+        <li><a class="menu-item" data-section="resource" href="#resource">Resource Fetcher</a></li>
       </ul>
-    </div>
+    </nav>
+    
+    <section class="content">
+      <section data-section="task" class="page">
+        <div class="section-title">
+          <button class="home">Home</button>
+          <h2 class="style-heading">Task Manager</h2>
+        </div>
+        
+        <p class="style-para">You can create and remove tasks as you wish!</p>
+        <button class="add">Add</button>
+        <button class="delete">Delete</button>
+      </section>
+      <section data-section="pomo" class="page">
+        <button class="home">Home</button>
+        <p>hello</p>
+      </section>
+    <section data-section="resource" class="page">
+        <button class="home">Home</button>
+      <p>yo</p>
+    </section>
+  </section>
   </main>
-
   
-
   <script src="app.js"></script>
 </body>

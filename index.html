@@ -4,49 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Student Tracker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Merienda:wght@300..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <main id="home" class="home view">
-  <!-- Heading -->
-  <h1 class="heading fonts">Student Tracker</h1>
-     <!-- Navbar layout -->
-    <nav class="navbar fonts">
-      <ul class="nav-list fonts">
-        <li class="nav-items fonts"><a href="#task-manager">Task Manager</a></li>
-
-        <li class="nav-items fonts"><a href="#pomodoro">Pomodoro</a></li>
-
-        <li class="nav-items fonts"><a href="#resource-fetcher">Resource Tracker</a></li>
+  <main class="wrapper">
+    <h1>Student Tracker</h1>
+    <div id="main" class="main-content">
+      <ul>
+        <li><a class="list-js list-css" data-task href="#">Task Manager</a></li>
+        <li><a class="list-js list-css" data-task href="#">Pomodoro</a></li>
+        <li><a class="list-js list-css" data-task href="#">Resource Fetcher</a></li>
       </ul>
-    </nav>
-   </main>
-  
-
-  <!-- Task Manager -->
-   
-  <section id="task-manager" class="task-manager view hidden">
-    <h2 class="fonts">Task Manager</h2>
-    <p class="fonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate obcaecati quidem voluptatum tenetur maiores adipisci!</p>
-    <div class="buttons">
-      <button class="style-button-add">Add a Task</button>
-      <button class="style-button-del">Delete a Task</button>
-      <button class="style-button-update">Update a Task</button>
     </div>
-  </section>
+  </main>
 
-  <!-- Pomodoro -->
-
-  <section id="pomodoro" class="pomodoro view hidden"></section>
-
-  <!-- Resource Fetcher -->
-   <section id="resource-fetcher" class="resource-fetcher view hidden"></section>
-
+  
 
   <script src="app.js"></script>
 </body>
-</html>
